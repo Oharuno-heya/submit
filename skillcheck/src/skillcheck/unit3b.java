@@ -17,15 +17,15 @@ public class unit3b {
 
 
 
-		if(x<y && x % 2 = 0 && y % 2 = 0) {
+		if(x<y && x % 2 == 0 && y % 2 == 0) {
 			System.out.println("x は y より小さく、かつ、x と y は共に偶数である。");
 		}
 
-		if(x = y && y < 0 ) {
+		if(x == y && y < 0 ) {
 			System.out.println("x と y は等しく、かつ、負の数である");
 		}
 
-		if(x < y || x % 2 = 0) {
+		if(x < y || x % 2 == 0) {
 			System.out.println("x は y より小さい、または、x は偶数である。");
 		}
 
