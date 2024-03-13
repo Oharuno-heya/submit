@@ -33,7 +33,7 @@ public class unit3b {
 			System.out.println("x は 10 以下または 100 以上で、かつ、y は 10 以上かつ 100 以下である。");
 		}
 
-		if(x !< 0 && y !< 0) {
+		if(x >= 0 && y >= 0) {
 			System.out.println("x も y も負の数である、ではない。（ x も y も負の数である、の否定）");
 		}
 	}
