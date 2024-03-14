@@ -7,7 +7,7 @@ public class unit2b {
 		int x = 7;
 		x = x * 3;
 		System.out.println("xの値は" + x + "です。");
-		
+
 		x = x / 2;
 		System.out.println("xの値は" + x + "です。");
 
