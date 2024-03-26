@@ -1,26 +1,22 @@
 package skillcheck;
-import java.io.*;
+/**
+ * 実力確認問題　2章演算子 2-3の解答クラス。
+ */
 public class unit2c {
-
-	public static void main(String[] args) throws IOException
-	{
+/**
+ * 演算子2‐3　
+ * @param args　2つの変数ｘ、ｙに整数を代入し、入れ替えて出力するパラメーター。
+ */
+	public static void main(String[] args){
 //		2-3
-		System.out.println("正の整数の値をｘとｙに代入してください。");
+		int x = 6;
+		int y = 9;
+		int z = 0;
 
-		BufferedReader br =
-				new BufferedReader(new InputStreamReader(System.in));
-
-		String str1 = br.readLine();
-		String str2 = br.readLine();
-
-		int x = Integer.parseInt(str1);
-		int y = Integer.parseInt(str2);
-
-
-
-		System.out.println("xの値は" + y + "です。");
-		System.out.println("yの値は" + x + "です。");
-
+		z = x;
+		x = y;
+		y = z;
+		System.out.println("xの値は" + x + "です。");
+		System.out.println("yの値は" + y + "です。");
 	}
-
 }
