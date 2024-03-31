@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 /**
  * 実力確認問題　3章if文　3-2
  */
+
 public class unit3a {
 	/**
 	 * ｘとｙに値を代入しｉｆ文で分類するメソッド。
@@ -20,11 +21,11 @@ public class unit3b {
 		int x = Integer.parseInt(str1);
 		int y = Integer.parseInt(str2);
 
-		if(x<y && x%2 == 0 && y%2 == 0) {
+		if (x < y && x % 2 == 0 && y % 2 == 0) {
 			System.out.println("x は y より小さく、かつ、x と y は共に偶数である。");
-		}else if(x == y && y < 0 ) {
+		} else if (x == y && y < 0 ) {
 			System.out.println("x と y は等しく、かつ、負の数である");
-		}else if(x < y || x % 2 == 0) {
+		} else if (x < y || x % 2 == 0) {
 			System.out.println("x は y より小さい、または、x は偶数である。");
 		}
 	}
