@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 /**
  * 実力確認問題　3章if文　3-1
  */
+
 public class unit3a {
 	/**
 	 * テストの点数を入力して、if文で評価をを出力するメソッド。
@@ -14,36 +15,43 @@ public class unit3a {
 	{
 //		3-1 case1
 		System.out.println("テストの点数を入力してください。(0~100点)");
+
 		BufferedReader br =
 			new BufferedReader(new InputStreamReader(System.in));
 
 		String str = br.readLine();
 		int res = Integer.parseInt(str);
 
-		if(res >= 60) {
+		if (res >= 60) {
 			System.out.println("合格");
-		}else {
+		} else if (res < 60) {
 			System.out.println("不合格");
+		} else {
+			System.out.println("テストの点数を0～100点で入力してください。");
 		}
 
 //		[case2]
-		if(res >= 80) {
+		if (res >= 80) {
 			System.out.println("大変よくできました。");
-		}else if(60 <= res && res < 80) {
+		} else if (60 <= res && res < 80) {
 			System.out.println("よくできました。");
-		}else {
+		} else (res < 60) {
 			System.out.println("残念でした。");
+		} else {
+			System.out.println("テストの点数を0～100点で入力してください。");
 		}
 
 //		[case3]
-		if(res >= 80) {
+		if (res >= 80) {
 			System.out.println("優");
-		}else if(res >= 70 && res < 80){
+		} else if (res >= 70 && res < 80){
 			System.out.println("良");
-		}else if(60<=res && res<70) {
+		} else if (60 <= res && res < 70) {
 			System.out.println("可");
-		}else {
+		} else (res < 60) {
 			System.out.println("不可");
+		} else {
+			System.out.println("テストの点数を0～100点で入力してください。");
 		}
 	}
 }
