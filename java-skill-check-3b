@@ -2,10 +2,10 @@ package skillcheck;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
 /**
  * 実力確認問題　3章if文　3-2
  */
-
 public class unit3a {
 	/**
 	 * ｘとｙに値を代入しｉｆ文で分類するメソッド。
