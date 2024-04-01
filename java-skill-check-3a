@@ -35,7 +35,7 @@ public class unit3a {
 			System.out.println("大変よくできました。");
 		} else if (60 <= res && res < 80) {
 			System.out.println("よくできました。");
-		} else (0 <= res && res < 60) {
+		} else if (0 <= res && res < 60) {
 			System.out.println("残念でした。");
 		} else {
 			System.out.println("テストの点数を0～100点で入力してください。");
@@ -48,7 +48,7 @@ public class unit3a {
 			System.out.println("良");
 		} else if (60 <= res && res < 70) {
 			System.out.println("可");
-		} else (0 <= res && res < 60) {
+		} else if (0 <= res && res < 60) {
 			System.out.println("不可");
 		} else {
 			System.out.println("テストの点数を0～100点で入力してください。");
