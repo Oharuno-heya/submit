@@ -22,15 +22,18 @@ public class for2 {
 		int[] pays = new int[3];
 		int sum = 0;
 
-		for (int i =0; i <3; i++) {
+		for (int i = 0; i < 3; i++) {
 			System.out.println("商品を入力してください。");
 			String goods = br.readLine();
+			goodsList[i] = goods;
 			System.out.println("単価を入力してください。");
 			String str1 = br.readLine();
 			int price = Integer.parseInt(str1);
+			prices[i] = price;
 			System.out.println("支払金額を入力して下さい。");
 			String str2 = br.readLine();
 			int pay = Integer.parseInt(str2);
+			pays[i] = pay;
 		}
 
 		for (int i = 0; i < 3; i++) {
