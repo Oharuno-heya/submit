@@ -11,9 +11,9 @@ public class for1 {
 //		for4-1
 		String[] contractor = {"中村", "田島", "小澤", "大西"};
 		int[] fee = {5000, 3000, 4500, 6000};
-		int[] deray = {2000,3500};
+		int[] deray = {2000, 3500};
 
-		for (int i=0; i<4; i++) {
+		for (int i = 0; i < 4; i++) {
 			System.out.println("契約者名：" + contractor[i] + "、　保険料：" + fee[i] + "円です。");
 		}
 		System.out.println("延滞利息金が発生している人数は、" + deray.length + "人です。");
