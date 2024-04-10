@@ -1,4 +1,5 @@
 package javaskillcheck2;
+
 /**
  * 実力確認問題　4章繰り返し、配列　4‐1
  */
