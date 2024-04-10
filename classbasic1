@@ -23,7 +23,7 @@ class Goods{
 	}
 }
 
-public class classbasic1 {
+public class GoodsPrice {
 	/**
 	 * 商品名と価格が入力されると、商品名と10%の税込み価格を出力する。
 	 * @param pname1,2 入力された商品名を示す引数。
