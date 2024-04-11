@@ -33,7 +33,7 @@ class Calculation{
 	}
 }
 
-public class classbasic2 {
+public class Result {
 	/**
 	 *　2つの整数ト1つの演算子を入力すると、計算結果が出力されるプログラム.
 	 * @param pnum1,2 入力された整数を示す引数。
