@@ -4,7 +4,13 @@ package javaskillcheck5classbasic;
  * Javaプログラム　5章実力確認問題　5‐2
  */
 class Calculation{
+	/**
+ 	 * 入力された1つ目の数値を代入する変数。
+   	 */
 	int num1;
+	/**
+ 	 * 入力された2つ目の数値を代入する変数。
+   	 */
 	int num2;
 	String ope;
 	int res = 0;
