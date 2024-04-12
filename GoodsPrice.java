@@ -3,7 +3,7 @@ package javaskillcheck5classbasic;
 /**
  * Javaプログラム　5章　実力確認問題5‐1　
  */
-class Goods{
+class Goods {
 /**
  * name:商品名の文字列を代入する変数。
  */
@@ -17,7 +17,7 @@ class Goods{
  */
 	int tax = 10;
 /**
- * calc:税込み価格を計算し、代入する変数。
+ * calc:税込み価格を計算し代入する変数。
  */
 	int calc;
 /**
