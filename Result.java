@@ -3,16 +3,22 @@ package javaskillcheck5classbasic;
 /**
  * Javaプログラム　5章実力確認問題　5‐2
  */
-class Calculation{
+class Calculation {
 	/**
- 	 * 入力された1つ目の数値を代入する変数。
+ 	 * 入力された1つ目の数値。
    	 */
 	int num1;
 	/**
- 	 * 入力された2つ目の数値を代入する変数。
+ 	 * 入力された2つ目の数値。
    	 */
 	int num2;
+	/**
+ 	 * 入力された演算子。
+   	 */
 	String ope;
+	/**
+ 	 * 2つの整数を演算子で計算した結果。
+   	 */
 	int res = 0;
 	void number1(int pnum1) {
 		num1 = pnum1;
