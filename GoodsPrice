@@ -16,7 +16,7 @@ class Goods{
 	void setGoods(String pname) {
 		name = pname;
 	}
-//	setPriceメソッド:入力された商品価格をpリセに代入し、変数calcで税込み価格を計算する。
+//	setPriceメソッド:入力された商品価格をpriceに代入し、変数calcで税込み価格を計算する。
 	void setPrice(int pprice) {
 		price = pprice;
 		calc = price + (price * tax / 100);
