@@ -24,10 +24,6 @@ public class if5 {
 		}else {
 			System.out.println("不合格");
 		}
-
-
-
-
 	}
 
 }
