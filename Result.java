@@ -18,9 +18,6 @@ public class Result {
 		System.out.println("演算子を入力してください。");
 		calc1.operant("*");
 		calc1.calc();
-		int result = calc1.getRes();
-		System.out.println("計算結果：" + result);
+		calc1.show();
 	}
 }
-
-
