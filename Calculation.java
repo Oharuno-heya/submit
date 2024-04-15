@@ -43,9 +43,9 @@ class Calculation {
 		}
 	}
 	/**
- 	 * 変数resをメインクラスに返すメソッド。
+ 	 * 変数resを出力
 	 */
-	int getRes() {
-		return res;
+	void show(){
+	System.out.println("計算結果：" + res);
 	}
 }
