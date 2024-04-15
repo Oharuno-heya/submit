@@ -9,12 +9,11 @@ public class GoodsPrice {
 	 */
 	public static void main(String[] args) {
 		System.out.println("商品名を入力してください");
-		Goods goods1;
-		goods1 = new Goods();
+		Goods goods1 = new Goods();
 		goods1.setGoods("プロテイン");
+		goods1.showName();
 		System.out.println("金額を入力してください");
 		goods1.setPrice(8500);
-		System.out.println("購入額：" + goods1.calc);
+		goods1.showPrice();
 	}
 }
-
