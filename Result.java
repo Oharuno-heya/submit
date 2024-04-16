@@ -9,15 +9,26 @@ public class Result {
 	 * @throws　入力された演算子が、「+」、「-」、「*」、「/」以外の場合、出力されない。
 	 */
 	public static void main(String[] args) {
+		System.out.println("1つ目の数値を入力してください。");
+		BufferedReader br =
+			new BufferedReader(new InputStremReader(System.in));
+		String str1 = br.readLine();
+		int num1 = Integer.parseInt(str1);
+		
+		System.out.println("2つ目の数値を入力してください。");
+		String str2 = br.readLine();
+		int num2 = Integer.parseInt(str2);
+		
+		System.out.println("演算子を入力してください。");
+		String str3 =br.readLine();
+		
 		Calculation calc1;
 		calc1 = new Calculation();
-		System.out.println("1つ目の数値を入力してください。");
-		calc1.number1(6);
-		System.out.println("2つ目の数値を入力してください。");
-		calc1.number2(3);
-		System.out.println("演算子を入力してください。");
-		calc1.operant("*");
+		calc1.number1(num1);
+		calc1.number2(num2);
+		
+		calc1.operant(str3);
 		calc1.calc();
-		calc1.show();
+		calc1.show()
 	}
 }
