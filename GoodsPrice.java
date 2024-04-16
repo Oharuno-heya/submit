@@ -9,11 +9,17 @@ public class GoodsPrice {
 	 */
 	public static void main(String[] args) {
 		System.out.println("商品名を入力してください");
+		BufferedReader br =
+			new BufferedReader(new InputStreamReader(System.in));
+		String str1 = br.readLine();
+		String str2 = br.readLine();
+
+		int num1 = Integer.parseInt(str2);
 		Goods goods1 = new Goods();
-		goods1.setGoods("プロテイン");
+		goods1.setGoods(str1);
 		goods1.showName();
 		System.out.println("金額を入力してください");
-		goods1.setPrice(8500);
+		goods1.setPrice(num1);
 		goods1.showPrice();
 	}
 }
