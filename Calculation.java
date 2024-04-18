@@ -6,7 +6,7 @@ package javaskillcheck5classbasic;
 class Calculation {
 	/** 入力された1つ目の数値1*/
 	int num1;
-	/* 入力された2つ目の数値1**/
+	/** 入力された2つ目の数値1*/
 	int num2;
 	/** 入力された演算子*/
 	String ope;
