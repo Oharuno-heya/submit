@@ -4,13 +4,13 @@ package jaavaskillcheckclassfunction;
  * 6章　実力確認問題　6‐2
  */
 class Person {
-	/* 名前の変数**/
+	/*※ 名前の変数*/
 	private String name;
-	/* 年齢の変数（String型）**/
+	/** 年齢の変数（String型）*/
 	private	String ages;
-	/* 名前の変数（int型）**/
+	/** 名前の変数（int型）*/
 	private	int age;
-	/* 住所の変数**/
+	/** 住所の変数 */
 	private	String address;
 	/** 電話番号の変数**/
 	private	String tel;
