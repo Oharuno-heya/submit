@@ -1,10 +1,10 @@
 package javaskillcheck7;
 
+import java.util.Scanner;
+
 /**
  * Javaプログラム　実力確認問題　7章　クラスの利用　7‐4
  */
-import java.util.Scanner;
-
 public class Prints4 {
 	/**
 	 * 入力されたカンマ区切りの文字列を1つずつ出力する。
