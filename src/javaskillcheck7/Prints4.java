@@ -1,5 +1,4 @@
 package javaskillcheck7;
-
 import java.util.Scanner;
 
 /**
