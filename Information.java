@@ -1,3 +1,5 @@
+package jaavaskillcheckclassfunction;
+
 public class Infomation {
 /**
  * 入力された名前、年齢、住所、電話番号をリスト化し、出力する
