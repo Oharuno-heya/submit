@@ -1,12 +1,11 @@
 package javaskillcheck7;
-
-/**
- * Javaプログラム　実力確認問題　7章　クラスの利用　7‐3
- */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Javaプログラム　実力確認問題　7章　クラスの利用　7‐3
+ */
 public class Roundingof3 {
 	/**
 	 * 入力された少数の値を四捨五入して整数で出力
