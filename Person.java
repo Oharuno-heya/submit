@@ -3,7 +3,7 @@ ackage jaavaskillcheckclassfunction;
 /**
  * 6章　実力確認問題　6‐2
  */
-class Person {
+public class Person {
 	/**　名前の変数　*/
 	private String name;
 	/** 年齢の変数（String型） */
