@@ -6,8 +6,8 @@ import java.util.Scanner;
  */
 public class Fruits4 {
 	/**
-	 * 入力されたカンマ区切りの文字列を1つずつ出力する。
-	 */
+ 	 * 入力されたカンマ区切りの文字列を1つずつ出力する。
+  	 */
     public static void main(String[] args){
     	//果物リストを入力
     	Scanner scanner =
