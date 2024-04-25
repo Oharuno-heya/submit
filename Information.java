@@ -8,7 +8,7 @@ public class Infomation {
 		//　個人情報リストの配列を定義
 		Person[] pers = new Person[3];
 		 for (int i = 0; i < pers.length; i++) {
-	          pers[i] = new Person();
+			 pers[i] = new Person();
 		 }
 		 
 		 //	個人情報リスト配列に要素を入力
