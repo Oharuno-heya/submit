@@ -36,11 +36,6 @@ public class Person {
 		this.ages = ages;
 		this.address = address;
 		this.tel = tel;
-
-		System.out.println("私の名前は" + name + "です。");
-		System.out.println("私の名前は" + ages + "です。");
-		System.out.println("私の名前は" + address + "です。");
-		System.out.println("私の名前は" + tel + "です。");
 	}
 	/**
 	 * 名前、年齢（int型）、住所、電話番号を変数に代入
@@ -54,18 +49,17 @@ public class Person {
 		this.age = age;
 		this.address = address;
 		this.tel = tel;
-
-		System.out.println("私の名前は" + name + "です。");
-		System.out.println("私の名前は" + age + "です。");
-		System.out.println("私の名前は" + address + "です。");
-		System.out.println("私の名前は" + tel + "です。");
 	}
 	/**
 	 * Listを出力
 	 */
 	public void show() {
 		System.out.println("私の名前は" + name + "です。");
-		System.out.println("私の名前は" + ages + "です。");
+		if (age == 0) {
+			System.out.println("私の名前は" + ages + "です。");
+		} else {
+			System.out.println("私の名前は" + age + "です。");
+		}
 		System.out.println("私の名前は" + address + "です。");
 		System.out.println("私の名前は" + tel + "です。");
 	}
