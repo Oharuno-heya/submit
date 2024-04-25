@@ -15,7 +15,6 @@ public class Date1 {
 
         //    1か月後の日付を出力
         LocalDate date2 = date.plusMonths(1);
-        int month = date2.getMonthValue();
-        System.out.println(date.getYear() + "/" + month + "/" + date.getDayOfMonth());
+        System.out.println(date.getYear() + "/" + date2.getMonthValue() + "/" + date.getDayOfMonth());
     }
 }
