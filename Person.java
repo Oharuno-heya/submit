@@ -1,4 +1,6 @@
 ackage jaavaskillcheckclassfunction;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 6章　実力確認問題　6‐2
@@ -17,39 +19,22 @@ public class Person {
 	/**
 	 * 名前、年齢、住所、電話番号の変数を初期化するコンストラクタ
 	 */
-	public Person() {
-		name = "";
-		ages = "";
-		age = 0;
-		address = "";
-		tel = "";
-	}
-	/**
-	 * 名前、年齢（String型）、住所、電話番号を変数に代入
-	 * @param name 人物名
-	 * @param ages 年齢（String型で入力された文字列）
-	 * @param address 住所
-	 * @param tel 電話番号
-	 */
-	public void setList(String name, String ages, String address, String tel) {
-		this.name = name;
-		this.ages = ages;
-		this.address = address;
-		this.tel = tel;
-	}
-	/**
-	 * 名前、年齢（int型）、住所、電話番号を変数に代入
-	 * @param name 人物名
-	 * @param ages 年齢（int型で入力された数値）
-	 * @param address 住所
-	 * @param tel 電話番号
-	 */
-	public void setList(String name, int age, String address, String tel) {
+	public Person(String name, int ages, String address, String tel) {
 		this.name = name;
 		this.age = age;
 		this.address = address;
 		this.tel = tel;
 	}
+	/**
+ 	 *
+   	 */
+	public void setAge(Object age) {
+		if (age instanceof String) {
+            		this.age = Integer.parseInt((String) age);
+       		} else if (age instanceof Integer) {
+            		this.age = (int) age;
+        	}
+    	}
 	/**
 	 * Listを出力
 	 */
