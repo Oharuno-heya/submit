@@ -123,21 +123,21 @@ public class Name {
 
 		Process[] pro = new Process[2];
 		pro[0] = new ProcessA(n, a);
-		pro[0].check();
 		pro[1] = new ProcessB(n, a);
-		pro[1].check();
 
+		for (int i = 0; i < pro.length; i++) {
+			pro[i].check();
+		}
 		boolean pa = pro[0].re();
 		boolean pb = pro[1].re();
 
 		for (int i = 0; i <pro.length; i++) {
-			if (pa = true) {
-				System.out.println(i + 1);
-				pro[i].run();
+			System.out.println(i + 1);
+			if (pa) {
+				pro[0].run();
 			}
-			if (pb = true) {
-				System.out.println(i + 1);
-				pro[i].run();
+			if (pb) {
+				pro[1].run();
 			}
 		}
 	}
