@@ -22,13 +22,14 @@ class ProcessA implements Process{
 	/** 入力された年齢を表す数値 */
 	private int age;
 	/** 入力された値の真偽値を定義 */
-	private boolean tf;
+	private boolean ba;
+
 	/**
 	 * 入力された名前と年齢を変数に代入するインスタンス
 	 * @param n　名前を示す文字列
 	 * @param a　年齢を示す数値
 	 */
-	public ProcessA(String n, int a ) {
+	public ProcessA(String n, int a) {
 		name = n;
 		age = a;
 	}
@@ -37,17 +38,17 @@ class ProcessA implements Process{
 	 */
 	public void check() {
 		if (name.length() < 10 && age >= 0 && age <= 140) {
-			tf = true;
+			ba = true;
 		} else {
-			tf = false;
+			ba = false;
 		}
 	}
 	/**
 	 * 変数ｔｆをメインクラスに返す
-	 * @return tf checkメソッドの条件式の真偽
+	 * @return ba checkメソッドの条件式の真偽
 	 */
 	public boolean re() {
-		return tf;
+		return ba;
 	}
 	/**
 	 * 指定された文字列を出力する
@@ -66,7 +67,7 @@ class ProcessB implements Process{
 	/** 入力された年齢を表す数値 */
 	private int age;
 	/** 入力された値の真偽値を定義 */
-	private boolean tf;
+	private boolean bb;
 	/**
 	 * 入力された名前と年齢を変数に代入するインスタンス
 	 * @param n　名前を示す文字列
@@ -81,16 +82,16 @@ class ProcessB implements Process{
 	 */
 	public void check() {
 		if (name.length() >= 5 && name.length() <= 20 && age >= 30 && age <= 60) {
-			tf = true;
+			bb = true;
 		} else {
-			tf = false;
+			bb = false;
 		}
 	}
 	/**
 	 * 変数ｔｆをメインクラスに返す
 	 */
 	public boolean re() {
-		return tf;
+		return bb;
 	}
 	/**
 	 * 指定された文字列を出力する
@@ -112,33 +113,35 @@ public class Name {
 	 */
 	public static void main(String[] args) throws IOException{
 
-		System.out.println("名前を入力して下さい。");
-		System.out.println("年齢を入力して下さい。");
+		System.out.println("名前と年齢をを入力して下さい。");
 
 		BufferedReader br =
 				new BufferedReader(new InputStreamReader(System.in));
-		String n = br.readLine();
-		String str = br.readLine();
-		int a = Integer.parseInt(str);
-
-		Process[] pro = new Process[2];
-		pro[0] = new ProcessA(n, a);
-		pro[1] = new ProcessB(n, a);
-
-		for (int i = 0; i < pro.length; i++) {
-			pro[i].check();
+		/**　BafferedReaderで入力された値を代入するための配列nとages、aを定義　*/
+		String[] n = new String[2];
+		String[] ages = new String[2];
+		int[] a = new int[2];
+		/**　配列nとagesに入力された値を代入。String型のages配列をint型のa配列に変換。　*/
+		for (int i = 0; i < 2; i++) {
+			n[i] =  br.readLine();
+			ages[i] =  br.readLine();
+			a[i] = Integer.parseInt(ages[i]);
 		}
+		/** インターフェイスProcessの配列を定義。 */
+		Process[] pro = new Process[2];
+		/** ProcessAとProcessBクラスのオブジェクトを作成し、checkメソッドを呼び出す。 */
+		for (int i = 0; i < pro.length; i++) {
+		pro[0] = new ProcessA(n[i], a[i]);
+		pro[0].check();
 		boolean pa = pro[0].re();
-		boolean pb = pro[1].re();
+		System.out.println(1);
+		pro[0].run();
 
-		for (int i = 0; i <pro.length; i++) {
-			System.out.println(i + 1);
-			if (pa) {
-				pro[0].run();
-			}
-			if (pb) {
-				pro[1].run();
-			}
+		pro[1] = new ProcessB(n[i], a[i]);
+		pro[1].check();
+		boolean pb = pro[1].re();
+		System.out.println(2);
+		pro[1].run();
 		}
 	}
 }
