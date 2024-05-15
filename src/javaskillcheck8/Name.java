@@ -91,29 +91,29 @@ public class Name {
 
 		BufferedReader br =
 				new BufferedReader(new InputStreamReader(System.in));
-		List<String> names = new ArrayList<>();
+		List<String> n = new ArrayList<>();
         List<String> ages = new ArrayList<>();
         List<Integer> a = new ArrayList<>();
 
         for (int i = 0; i < 2; i++) {
-            names.add(br.readLine());
+            n.add(br.readLine());
             ages.add(br.readLine());
             a.add(Integer.parseInt(ages.get(i)));
         }
-
-        List<Process> pro = new ArrayList<>();
         /** ProcessAとProcessBクラスのオブジェクトを作成。checkメソッドからBoolean型の戻り値を受け取り、引数に応じてrun()メソッドを呼び出す。*/
+        Process[] pro = new Process[2];
         for (int i = 0; i < 2; i++) {
-            Process ipro;
-            if (i == 0) {
-                ipro = new ProcessA(names.get(i), a.get(i));
-            } else {
-                ipro = new ProcessB(names.get(i), a.get(i));
+        	pro[0] = new ProcessA(n.get(i), a.get(i));
+            boolean pa = pro[0].check();
+            pro[1] = new ProcessB(n.get(i), a.get(i));
+            boolean pb = pro[1].check();
+            if (pa) {
+            	System.out.println(i+1);
+                pro[0].run();
             }
-            pro.add(ipro);
-            boolean result = ipro.check();
-            if (result) {
-                ipro.run();
+            if (pb) {
+            	System.out.println(i+1);
+                pro[1].run();
             }
         }
     }
