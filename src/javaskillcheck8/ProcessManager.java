@@ -3,21 +3,27 @@ package javaskillcheck8;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * メインメソッドで入力された文字列を受け取り、Map内から応する値をメインメソッドに返すクラス
+ * @param processMap String型のキーとコンストラクタを値に持つMap
+ * @param mode "1"または"2"が代入された変数
+ */
 public class ProcessManager {
-	 /** サービスマップ */
-	  private Map<String, Process> processMap;
-	  /**
-	   * コンストラクタ
-	   */
-	  public ProcessManager() {
-	    this.processMap = new HashMap<String, Process>();
+	/** ProcessA,Bクラスのコンストラクタを値に持つMapを宣言 */
+	private Map<String, Process> processMap;
+	/**
+	 * Mapの値にProcessA,Bクラスのインスタンスをを追加するコンストラクタ
+	 */
+	public ProcessManager() {
+		this.processMap = new HashMap<String, Process>();
 	    this.processMap.put("1", new ProcessA());
 	    this.processMap.put("2", new ProcessB());
-	  }
-	  /**
-	   * インスタンス取得
-	   */
-	  public Process getProcess(String mode) {
-	    return this.processMap.get(mode);
-	  }
+	}
+	/**
+	 * インスタンス取得
+	 * @return メインメソッドで入力された変数modeと一致するキーを持つMapの値を返す。
+	 */
+	public Process getProcess(String mode) {
+		return this.processMap.get(mode);
+	}
 }

@@ -2,6 +2,8 @@ package javaskillcheck8;
 
 /**
  * ProcessBのクラス
+ * @param name 名前
+ * @param age 年齢
  */
 public class ProcessB implements Process{
 	/** 名前 */
@@ -10,6 +12,7 @@ public class ProcessB implements Process{
 	private int age;
 	/**
 	 * 名前がが5～20文字かつ年齢が30~60歳かを確認し、真偽値を返す
+	 * @return 名前の文字数が5～20文字かつ年齢が30～60歳のとき、trueを返す。
 	 */
 	public boolean check(String name, int age) {
 		this.name = name;

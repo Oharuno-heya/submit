@@ -10,25 +10,27 @@ import java.io.InputStreamReader;
 public class Calculate8 {
 	/**
 	 * 2つの数値と演算子を示す1～４の数値を入力し計算結果を出力するメインメソッド
-	 * @param args　整数ｚに1~4以外の数値が入力されるとエラー。
-	 * @throws IOException　
+	 * @param num1 1つ目の数値
+	 * @param num2　2つ目の数値
+	 * @param operator 演算子を決めるための数値（1~4）
 	 */
 	public static void main(String[] args) throws IOException{
 		System.out.println("数値を3つ入力。最後の1つは1~4の数値");
 		BufferedReader br =
 				new BufferedReader(new InputStreamReader(System.in));
-		/**	入力値を受け取りint型に変換 */
+		// 入力値を受け取る
 		String str1 = br.readLine();
 		String str2 = br.readLine();
 		String str3 = br.readLine();
-		int x = Integer.parseInt(str1);
-		int y = Integer.parseInt(str2);
-		int z = Integer.parseInt(str3);
+		// str1~3をint型に変換
+		int num1 = Integer.parseInt(str1);
+		int num2 = Integer.parseInt(str2);
+		int operator = Integer.parseInt(str3);
 
-		/** CalculateManagerクラスのコンストラクタ */
+		//CalculateManagerクラスのコンストラクタ
 	    CalculateManager manager = new CalculateManager();
-	    CalculateBase baseInterface = manager.getZ(z);
+	    CalculateBase baseInterface = manager.getZ(operator);
 
-	    baseInterface.calculate(x, y);
+	    baseInterface.setCalculate(num1, num2);
 	}
 }
