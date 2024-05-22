@@ -23,15 +23,15 @@ class ProcessA implements Process{
 	private int age;
 	/**
 	 * 入力された名前と年齢を変数に代入するインスタンス
-	 * @param n　名前を示す文字列
-	 * @param a　年齢を示す数値
+	 * @param name　名前を示す文字列
+	 * @param age　年齢を示す数値
 	 */
-	public ProcessA(String n, int a) {
-		name = n;
-		age = a;
+	public ProcessA(String name, int age) {
+		name = name;
+		age = age;
 	}
 	/**
-	 * 名前がが10文字未満かつ年齢が140歳以下かを確認する条件式
+	 * 名前が10文字未満かつ年齢が140歳以下かを確認する条件式
 	 */
 	 public boolean check() {
 		 return (name.length() < 10 && age >= 0 && age <= 140);
