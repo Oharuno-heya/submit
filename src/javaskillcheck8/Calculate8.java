@@ -29,7 +29,7 @@ public class Calculate8 {
 
 		//CalculateManagerクラスのコンストラクタ
 	    CalculateManager manager = new CalculateManager();
-	    CalculateBase baseInterface = manager.getZ(operator);
+	    CalculateBase baseInterface = manager.getOperator(operator);
 
 	    baseInterface.setCalculate(num1, num2);
 	}

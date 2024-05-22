@@ -27,7 +27,7 @@ public class CalculateManager {
 	 * 					3なら、Timesクラスのコンストラクタ、
 	 * 					4なら、Devidedbyクラスのコンストラクタを返す。
 	 */
-	public CalculateBase getZ(int operator) {
+	public CalculateBase getOperator(int operator) {
 		return this.CalculateMap.get(operator);
 	  }
 }
