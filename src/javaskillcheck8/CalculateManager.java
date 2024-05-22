@@ -7,7 +7,7 @@ import java.util.Map;
  * operatorの数値に応じて、2つの数値の計算をするクラスのコンストラクタを返すクラス
  */
 public class CalculateManager {
-	//	マップ
+	// マップ
 	private Map<Integer, CalculateBase> CalculateMap;
 	/**
 	 * コンストラクタ
@@ -23,9 +23,9 @@ public class CalculateManager {
 	 * インスタンス取得
 	 * @param operator 1~4の数値
 	 * @return operatorが１なら、Plusクラスのコンストラクタ、
-	 * 　　　　　　　　　　　　　　　　　2なら、Minutクラスのコンストラクタ、
-	 * 					3なら、Timesクラスのコンストラクタ、
-	 * 					4なら、Devidedbyクラスのコンストラクタを返す。
+	 * 　　　　　　　　　　2なら、Minutクラスのコンストラクタ、
+	 * 		     3なら、Timesクラスのコンストラクタ、
+	 * 		     4なら、Devidedbyクラスのコンストラクタを返す。
 	 */
 	public CalculateBase getOperator(int operator) {
 		return this.CalculateMap.get(operator);
