@@ -31,14 +31,11 @@ public class ProcessMain {
 		// ProcessManagerクラスのコンストラクタを宣言
 		ProcessManager manager = new ProcessManager();
 		// ProcessManagerクラス　getProcessメソッドからの戻り値を受け取る
-	    Process iprocess = manager.getProcess(mode);
+		Process iprocess = manager.getProcess(mode);
 
-	    // チェックと戻り値受け取り
-	    boolean tf = iprocess.check(name, age);
-
-	    // runメソッド呼び出し
-	    if (tf) {
-	    	iprocess.run();
-	    }
+	    // checkメソッドからの戻り値がtrueのとき、runメソッドを行う
+		if (iprocess.check(name, age)) {
+			iprocess.run();
+		}
     }
 }

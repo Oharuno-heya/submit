@@ -27,10 +27,10 @@ public class Calculate8 {
 		int num2 = Integer.parseInt(str2);
 		int operator = Integer.parseInt(str3);
 
-		//CalculateManagerクラスのコンストラクタ
-	    CalculateManager manager = new CalculateManager();
+		// CalculateManagerクラスのコンストラクタ
+		CalculateManager manager = new CalculateManager();
 	    CalculateBase baseInterface = manager.getOperator(operator);
-
-	    baseInterface.setCalculate(num1, num2);
+	    // 任意のCalculateメソッドで計算し、結果を出力。
+	    baseInterface.Calculate(num1, num2);
 	}
 }

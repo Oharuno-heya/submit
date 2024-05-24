@@ -16,8 +16,8 @@ public class ProcessManager {
 	 */
 	public ProcessManager() {
 		this.processMap = new HashMap<String, Process>();
-	    this.processMap.put("1", new ProcessA());
-	    this.processMap.put("2", new ProcessB());
+		this.processMap.put("1", new ProcessA());
+		this.processMap.put("2", new ProcessB());
 	}
 	/**
 	 * インスタンス取得
