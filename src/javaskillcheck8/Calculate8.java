@@ -31,6 +31,6 @@ public class Calculate8 {
 		CalculateManager manager = new CalculateManager();
 	    CalculateBase baseInterface = manager.getOperator(operator);
 	    // 任意のCalculateメソッドで計算し、結果を出力。
-	    baseInterface.Calculate(num1, num2);
+	    baseInterface.calculate(num1, num2);
 	}
 }
