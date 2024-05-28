@@ -3,7 +3,7 @@ package javaskillcheck8;
 /**
  * インターフェイス
  */
-public interface calculateBase {
+public interface CalculateBase {
 	/**
 	 * 抽象メソッド
 	 * @param num1　数値１
