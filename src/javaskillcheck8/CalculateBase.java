@@ -9,5 +9,10 @@ public interface CalculateBase {
 	 * @param num1　数値１
 	 * @param num2　数値2
 	 */
-	public void calculate(int num1, int num2);
+	public int calculate(int num1, int num2);
+	/**
+	 * 出力するメソッド
+	 * @param result 計算結果
+	 */
+	public void show(int result);
 }
