@@ -11,7 +11,7 @@ public class ExceptionB implements ExceptionInterface{
 	/** 年齢 */
 	private int age;
 	/**
-	 * 名前がが5～20文字かつ年齢が30~60歳かを確認し、真偽値を返す
+	 * 名前が5～20文字かつ年齢が30~60歳かを確認し、真偽値を返す
 	 * @return 名前の文字数が5～20文字かつ年齢が30～60歳のとき、trueを返す。
 	 */
 	public boolean check(String name, int age) throws CustomException{
