@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public class CalculateManager {
 	/**
-	 * マップ。キーに1~4を持ち、値にPlus、Minus、Times、Devidedbyクラスのインスタンスをもつ。
+	 * マップ。キーに1~4を持ち、値にPlus、Minus、Times、Dividedbyクラスのインスタンスをもつ。
 	 */
 	private Map<Integer, CalculateBase> CalculateMap;
 	/**
@@ -25,9 +25,9 @@ public class CalculateManager {
 	 * インスタンス取得
 	 * @param operator 1~4の数値
 	 * @return operatorが１なら、Plusクラスのコンストラクタ、
-	 * 2なら、Minutクラスのコンストラクタ、
+	 * 2なら、Minusクラスのコンストラクタ、
 	 * 3なら、Timesクラスのコンストラクタ、
-	 * 4なら、Devidedbyクラスのコンストラクタを返す。
+	 * 4なら、Dividedbyクラスのコンストラクタを返す。
 	 */
 	public CalculateBase getOperator(int operator) {
 		return this.CalculateMap.get(operator);

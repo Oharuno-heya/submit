@@ -14,5 +14,5 @@ public interface CalculateBase {
 	 * 出力するメソッド
 	 * @param result 計算結果
 	 */
-	public void show(int result);
+	public void show(int num1, int num2, int result);
 }

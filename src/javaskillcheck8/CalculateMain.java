@@ -33,6 +33,6 @@ public class CalculateMain {
 	    // 任意のCalculateメソッドで計算し、戻り値をresultで受け取る。
 		int result = baseInterface.calculate(num1, num2);
 		// 出力。num1とnum2の計算式と計算結果を出力。
-		baseInterface.show(result);
+		baseInterface.show(num1, num2, result);
 	}
 }
