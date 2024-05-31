@@ -17,7 +17,7 @@ public class ProcessMain {
 		try {
 			// 入力
 			BufferedReader br =
-					new BufferedReader(new InputStreamReader(System.in));
+				new BufferedReader(new InputStreamReader(System.in));
 
 			// モードを選択するための数値を入力
 			System.out.println("処理を行うモードを選択してください。（１：Aモード、2；Bモード）");
@@ -33,8 +33,8 @@ public class ProcessMain {
 			ProcessManager manager = new ProcessManager();
 			// ProcessManagerクラス　getProcessメソッドからの戻り値を受け取る
 			ProcessInterface iprocess = manager.getProcess(mode);
-
-		    // checkメソッドからの戻り値がtrueのとき、runメソッドを行う
+			
+			// checkメソッドからの戻り値がtrueのとき、runメソッドを行う
 			iprocess.check(name, age);
 			if (iprocess.check(name, age)) {
 				iprocess.run();
