@@ -2,8 +2,6 @@ package exception9;
 
 /**
  * ProcessAクラス
- * @param name 名前
- * @param age 年齢
  */
 public class ProcessA implements ProcessInterface {
 	/** 名前 */
@@ -12,6 +10,8 @@ public class ProcessA implements ProcessInterface {
 	private int age;
 	/**
 	 * 名前が10文字未満かつ年齢が140歳以下かを確認して、真偽値を返す
+  	 * @param name 名前
+    	 * @param age 年齢
 	 * @return 名前が10文字未満かつ0歳以上140歳未満のとき、Trueを返す。
 	 */
 	public boolean check(String name, int age) throws CustomException {
