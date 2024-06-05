@@ -2,8 +2,6 @@ package exception9;
 
 /**
  * ProcessBのクラス
- * @param name 名前
- * @param age 年齢
  */
 public class ProcessB implements ProcessInterface {
 	/** 名前 */
@@ -12,6 +10,8 @@ public class ProcessB implements ProcessInterface {
 	private int age;
 	/**
 	 * 名前が5～20文字かつ年齢が30~60歳かを確認し、真偽値を返す
+  	 * name 名前
+         * age 年齢
 	 * @return 名前の文字数が5～20文字かつ年齢が30～60歳のとき、trueを返す。
 	 */
 	public boolean check(String name, int age) throws CustomException {
