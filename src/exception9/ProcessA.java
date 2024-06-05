@@ -14,7 +14,7 @@ public class ProcessA implements ProcessInterface {
     	 * @param age 年齢
 	 * @return 名前が10文字未満かつ0歳以上140歳未満のとき、Trueを返す。
 	 */
-	public void check(String name, int age) throws CustomException {
+	public boolean check(String name, int age) throws CustomException {
 		this.name = name;
 		this.age = age;
 		if (name.length() < 10 && age >= 0 && age <= 140) {
