@@ -17,11 +17,11 @@ public class ProcessA implements ProcessInterface {
 	public void check(String name, int age) throws CustomException {
 		this.name = name;
 		this.age = age;
-		if (name.length() >= 10 || age < 0 || age > 140) {
+		if (name.length() < 10 && age >= 0 && age <= 140) {
+			return true;
+		} else {
 			CustomException e = new CustomException();
 			throw e;
-		} else {
-			return true;
 		}
 	}
 	/**
